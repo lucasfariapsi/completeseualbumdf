@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Complete seu Álbum DF — Figurinhas avulsas Copa 2026</title>
+<meta name="description" content="Compre figurinhas avulsas da Copa do Mundo 2026 e termine seu álbum sem repetidas. Estoque atualizado, entrega em Brasília e envio para todo o Brasil." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Archivo:wght@400;500;600;700;800;900&family=Caveat:wght@500;700&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy:        #0A1A40;
+    --navy-deep:   #060F2A;
+    --navy-soft:   #14245A;
+    --yellow:      #FFC629;
+    --yellow-soft: #FFE07A;
+    --green:       #1FA84A;
+    --green-deep:  #0E7A33;
+    --whatsapp:    #25D366;
+    --whatsapp-d:  #128C45;
+    --red:         #E63946;
+    --blue:        #2D6CDF;
+    --purple:      #7E3FBF;
+    --orange:      #F08A24;
+    --cream:       #FFF8E7;
+    --paper:       #FFFDF6;
+    --ink:         #0E1530;
+    --ink-soft:    #4A5072;
+    --line:        rgba(10, 26, 64, 0.12);
+    --shadow-card: 0 6px 0 0 rgba(10,26,64,0.10), 0 12px 28px -10px rgba(10,26,64,0.18);
+  }
+
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Archivo', system-ui, sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.55;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .display { font-family: 'Anton', 'Bebas Neue', sans-serif; letter-spacing: 0.01em; line-height: 0.95; text-transform: uppercase; }
+  .bebas   { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.06em; }
+  .hand    { font-family: 'Caveat', cursive; }
+
+  /* ============ NAV ============ */
+  .nav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(10, 26, 64, 0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,198,41,0.18);
+  }
+  .nav-inner {
+    max-width: 1200px; margin: 0 auto;
+    padding: 14px 20px;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  }
+  .nav-brand {
+    display: flex; align-items: center; gap: 10px;
+    color: #fff; text-decoration: none;
+  }
+  .nav-brand .dot {
+    width: 28px; height: 28px; border-radius: 8px;
+    background: var(--yellow); color: var(--navy);
+    display: grid; place-items: center;
+    font-family: 'Anton', sans-serif; font-size: 17px;
+  }
+  .nav-brand .handle { font-weight: 700; font-size: 14px; letter-spacing: 0.02em; }
+  .nav-brand .handle span { color: var(--yellow); }
+  .nav-links { display: flex; gap: 22px; }
+  .nav-links a {
+    color: rgba(255,255,255,0.78); text-decoration: none;
+    font-size: 13px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase;
+    transition: color .15s;
+  }
+  .nav-links a:hover { color: var(--yellow); }
+  .nav-cta {
+    background: var(--whatsapp); color: #fff;
+    padding: 8px 14px; border-radius: 999px;
+    font-size: 13px; font-weight: 700; text-decoration: none;
+    display: flex; align-items: center; gap: 6px;
+    transition: transform .15s, background .15s;
+  }
+  .nav-cta:hover { background: var(--whatsapp-d); transform: translateY(-1px); }
+  .nav-actions { display: flex; align-items: center; gap: 10px; }
+  .nav-ig {
+    width: 36px; height: 36px; border-radius: 999px;
+    display: grid; place-items: center;
+    color: #fff;
+    background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    text-decoration: none;
+    transition: transform .15s, filter .15s;
+  }
+  .nav-ig:hover { transform: translateY(-1px); filter: brightness(1.1); }
+  @media (max-width: 760px) { .nav-links { display: none; } }
+
+  /* ============ HERO ============ */
+  .hero {
+    position: relative;
+    background:
+      radial-gradient(1200px 600px at 80% -10%, rgba(255,198,41,0.18), transparent 60%),
+      radial-gradient(900px 500px at 0% 110%, rgba(31,168,74,0.18), transparent 55%),
+      linear-gradient(180deg, var(--navy) 0%, var(--navy-deep) 100%);
+    color: #fff;
+    overflow: hidden;
+    padding: 56px 20px 80px;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image:
+      radial-gradient(circle at 1px 1px, rgba(255,255,255,0.06) 1px, transparent 0);
+    background-size: 22px 22px;
+    pointer-events: none;
+  }
+  /* football pitch lines */
+  .hero::after {
+    content: '';
+    position: absolute; left: 50%; bottom: -60px; transform: translateX(-50%);
+    width: 1200px; height: 200px;
+    background:
+      radial-gradient(ellipse at center top, rgba(255,255,255,0.10), transparent 60%);
+    pointer-events: none;
+  }
+  .hero-inner {
+    max-width: 1100px; margin: 0 auto;
+    position: relative; z-index: 2;
+    display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 32px; align-items: center;
+  }
+  .hero-tag {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,198,41,0.4);
+    color: var(--yellow);
+    padding: 6px 14px; border-radius: 999px;
+    font-weight: 700; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase;
+  }
+  .hero-tag .pulse {
+    width: 8px; height: 8px; border-radius: 50%; background: var(--yellow);
+    box-shadow: 0 0 0 0 rgba(255,198,41,0.7);
+    animation: pulse 1.8s infinite;
+  }
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(255,198,41,0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(255,198,41,0); }
+    100% { box-shadow: 0 0 0 0 rgba(255,198,41,0); }
+  }
+
+  .hero h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(2.6rem, 6.4vw, 5rem);
+    line-height: 0.92;
+    text-transform: uppercase;
+    margin: 18px 0 14px;
+    letter-spacing: 0.005em;
+  }
+  .hero h1 .stroke {
+    color: transparent;
+    -webkit-text-stroke: 2px var(--yellow);
+  }
+  .hero h1 .underline {
+    position: relative; display: inline-block;
+    color: var(--yellow);
+  }
+  .hero h1 .underline::after {
+    content: '';
+    position: absolute; left: 0; right: 0; bottom: 4%;
+    height: 14%;
+    background: rgba(230,57,70,0.55);
+    z-index: -1;
+    transform: skewX(-8deg);
+  }
+  .hero p.lead {
+    font-size: clamp(15px, 1.6vw, 18px);
+    color: rgba(255,255,255,0.82);
+    max-width: 520px;
+    line-height: 1.55;
+  }
+  .hero-ctas { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 12px; }
+  .hero-delivery {
+    margin-top: 28px;
+    display: inline-flex; align-items: center; gap: 12px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,198,41,0.35);
+    border-radius: 14px;
+    padding: 14px 20px;
+    color: #fff;
+    font-size: 15px;
+  }
+  .hero-delivery svg { color: var(--yellow); flex-shrink: 0; }
+  .hero-delivery strong { color: var(--yellow); font-weight: 800; }
+
+  .hero-art {
+    position: relative;
+    display: grid; place-items: center;
+    min-height: 420px;
+  }
+  .hero-art .glow {
+    position: absolute; inset: 6% 8%;
+    background: radial-gradient(circle, rgba(255,198,41,0.35), transparent 65%);
+    filter: blur(20px);
+  }
+  .hero-art .logo-img {
+    position: relative;
+    width: 100%; max-width: 540px;
+    filter: drop-shadow(0 18px 30px rgba(0,0,0,0.45));
+    animation: floaty 6s ease-in-out infinite;
+  }
+  @keyframes floaty {
+    0%, 100% { transform: translateY(0) rotate(-1deg); }
+    50% { transform: translateY(-10px) rotate(1deg); }
+  }
+  .hero-art .sparkle {
+    position: absolute; pointer-events: none;
+    font-family: 'Anton', sans-serif; color: var(--yellow);
+    opacity: 0.9;
+  }
+  .hero-art .sparkle.s1 { top: 8%; left: 4%; transform: rotate(-12deg); }
+  .hero-art .sparkle.s2 { bottom: 10%; right: 6%; transform: rotate(8deg); }
+  .hero-art .sparkle .h { font-family: 'Caveat', cursive; font-weight: 700; font-size: 22px; color: #fff; display: block; }
+
+  @media (max-width: 880px) {
+    .hero { padding: 36px 18px 56px; }
+    .hero-inner { grid-template-columns: 1fr; text-align: center; gap: 12px; }
+    .hero-art { order: -1; min-height: 280px; }
+    .hero-art .logo-img { max-width: 420px; }
+    .hero p.lead { margin-left: auto; margin-right: auto; }
+    .hero-ctas, .hero-stats { justify-content: center; }
+    .hero-tag { margin-inline: auto; }
+  }
+
+  /* ============ BUTTONS ============ */
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-family: 'Archivo', sans-serif; font-weight: 800;
+    font-size: 15px; letter-spacing: 0.02em;
+    padding: 14px 22px; border-radius: 12px;
+    text-decoration: none; cursor: pointer; border: 0;
+    transition: transform .12s, box-shadow .15s, background .15s;
+    box-shadow: 0 4px 0 0 rgba(0,0,0,0.18);
+  }
+  .btn:active { transform: translateY(2px); box-shadow: 0 2px 0 0 rgba(0,0,0,0.18); }
+  .btn-yellow { background: var(--yellow); color: var(--navy); }
+  .btn-yellow:hover { background: var(--yellow-soft); }
+  .btn-whatsapp { background: var(--whatsapp); color: #fff; }
+  .btn-whatsapp:hover { background: var(--whatsapp-d); }
+  .btn-ghost {
+    background: transparent; color: #fff;
+    border: 2px solid rgba(255,255,255,0.3);
+    box-shadow: none;
+  }
+  .btn-ghost:hover { border-color: var(--yellow); color: var(--yellow); }
+  .btn-lg { padding: 18px 28px; font-size: 17px; border-radius: 14px; }
+
+  /* ============ SECTION SCAFFOLD ============ */
+  section { position: relative; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+  .section-head { text-align: center; margin-bottom: 36px; }
+  .section-eyebrow {
+    display: inline-block;
+    font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.18em;
+    font-size: 13px;
+    background: var(--navy); color: var(--yellow);
+    padding: 5px 14px; border-radius: 999px;
+    margin-bottom: 12px;
+  }
+  .section-title {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
+    line-height: 1; text-transform: uppercase;
+    color: var(--navy);
+  }
+  .section-title em { font-style: normal; color: var(--red); position: relative; }
+  .section-title em::after {
+    content: ''; position: absolute; left: -2%; right: -2%; bottom: 6%; height: 18%;
+    background: var(--yellow); z-index: -1; transform: skewX(-10deg);
+  }
+  .section-sub {
+    margin: 12px auto 0; max-width: 640px;
+    color: var(--ink-soft); font-size: 16px;
+  }
+
+  /* ============ APRESENTACAO ============ */
+  .pitch {
+    background: var(--paper);
+    padding: 80px 0 60px;
+    position: relative;
+    border-bottom: 1px dashed var(--line);
+  }
+  .pitch::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 8px;
+    background: repeating-linear-gradient(
+      90deg,
+      var(--yellow) 0 40px,
+      var(--navy) 40px 80px,
+      var(--red) 80px 120px,
+      var(--green) 120px 160px,
+      var(--blue) 160px 200px
+    );
+  }
+  .pitch-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center;
+  }
+  .pitch-copy h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(1.9rem, 4vw, 3rem);
+    line-height: 1; text-transform: uppercase;
+    color: var(--navy); margin-bottom: 18px;
+  }
+  .pitch-copy h2 .hl { color: var(--red); }
+  .pitch-copy p {
+    font-size: 17px; color: var(--ink-soft);
+    margin-bottom: 14px;
+  }
+  .pitch-copy p strong { color: var(--navy); font-weight: 800; }
+  .pitch-copy .scribble {
+    color: var(--green-deep); font-family: 'Caveat', cursive;
+    font-weight: 700; font-size: 26px;
+    transform: rotate(-2deg); display: inline-block;
+    margin-top: 8px;
+  }
+  .pitch-art {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    display: grid; place-items: center;
+  }
+  .pitch-art .ring {
+    position: absolute; inset: 8%;
+    border-radius: 50%;
+    background:
+      conic-gradient(from 0deg,
+        var(--yellow) 0 16%,
+        var(--red) 16% 33%,
+        var(--blue) 33% 50%,
+        var(--green) 50% 66%,
+        var(--purple) 66% 83%,
+        var(--orange) 83% 100%);
+    filter: blur(2px) saturate(1.05);
+    opacity: 0.95;
+  }
+  .pitch-art .ring::after {
+    content: '';
+    position: absolute; inset: 8%;
+    background: var(--paper);
+    border-radius: 50%;
+  }
+  .pitch-art .mascote {
+    position: relative;
+    width: 78%; max-width: 380px;
+    filter: drop-shadow(0 18px 28px rgba(10,26,64,0.25));
+    animation: mascote-bob 5s ease-in-out infinite;
+  }
+  @keyframes mascote-bob {
+    0%, 100% { transform: translateY(0) rotate(-2deg); }
+    50% { transform: translateY(-12px) rotate(2deg); }
+  }
+  .pitch-art .badge-tilt {
+    position: absolute;
+    background: var(--navy); color: var(--yellow);
+    font-family: 'Anton', sans-serif; font-size: 16px;
+    padding: 8px 14px; border-radius: 10px;
+    border: 2px solid var(--yellow);
+    box-shadow: 0 6px 0 var(--red);
+  }
+  .pitch-art .badge-tilt.b2 { bottom: 10%; left: 0%; transform: rotate(-6deg); background: var(--yellow); color: var(--navy); border-color: var(--navy); box-shadow: 0 6px 0 var(--green); }
+
+  .pitch-art .speech-bubble {
+    position: absolute;
+    background: #fff;
+    color: var(--navy);
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    padding: 14px 20px;
+    border-radius: 18px;
+    border: 3px solid var(--navy);
+    box-shadow: 0 6px 0 var(--red);
+    line-height: 1.05;
+    white-space: nowrap;
+  }
+  .pitch-art .speech-bubble::before {
+    content: '';
+    position: absolute;
+    bottom: -16px; left: 28px;
+    width: 0; height: 0;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-top: 16px solid var(--navy);
+  }
+  .pitch-art .speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; left: 32px;
+    width: 0; height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 11px solid #fff;
+  }
+  .pitch-art .speech-bubble.b1 {
+    top: 4%; right: -2%;
+    transform: rotate(6deg);
+    animation: bubble-pop 4s ease-in-out infinite;
+  }
+  @keyframes bubble-pop {
+    0%, 100% { transform: rotate(6deg) translateY(0); }
+    50% { transform: rotate(4deg) translateY(-6px); }
+  }
+
+  @media (max-width: 880px) {
+    .pitch { padding: 56px 0 40px; }
+    .pitch-grid { grid-template-columns: 1fr; gap: 24px; text-align: center; }
+    .pitch-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  /* ============ COMO FUNCIONA ============ */
+  .how {
+    background:
+      radial-gradient(900px 400px at 100% 0%, rgba(45,108,223,0.10), transparent 60%),
+      var(--cream);
+    padding: 90px 0;
+  }
+  .steps {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
+    counter-reset: step;
+  }
+  .step {
+    background: #fff;
+    border: 2px solid var(--navy);
+    border-radius: 18px;
+    padding: 28px 24px 26px;
+    position: relative;
+    box-shadow: var(--shadow-card);
+    transition: transform .2s;
+  }
+  .step:hover { transform: translateY(-4px); }
+  .step::before {
+    counter-increment: step;
+    content: counter(step, decimal-leading-zero);
+    position: absolute;
+    top: -22px; left: 22px;
+    font-family: 'Anton', sans-serif;
+    font-size: 44px; line-height: 1;
+    color: var(--yellow);
+    -webkit-text-stroke: 2px var(--navy);
+    background: #fff;
+    padding: 0 8px;
+  }
+  .step .icon {
+    width: 56px; height: 56px; border-radius: 14px;
+    background: var(--navy); color: var(--yellow);
+    display: grid; place-items: center;
+    margin: 8px 0 18px;
+  }
+  .step:nth-child(2) .icon { background: var(--red); color: #fff; }
+  .step:nth-child(3) .icon { background: var(--green); color: #fff; }
+  .step h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: var(--navy);
+    margin-bottom: 8px;
+    line-height: 1.05;
+  }
+  .step p { color: var(--ink-soft); font-size: 15px; }
+  .step .arrow {
+    position: absolute; right: -22px; top: 50%; transform: translateY(-50%);
+    color: var(--navy); opacity: 0.4;
+  }
+  .step:last-child .arrow { display: none; }
+  @media (max-width: 880px) {
+    .steps { grid-template-columns: 1fr; }
+    .step .arrow { display: none; }
+  }
+
+  /* ============ FORM (integrado) ============ */
+  .form-section {
+    background: var(--paper);
+    padding: 90px 0;
+    position: relative;
+  }
+  .form-section::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 6px;
+    background: linear-gradient(90deg, var(--yellow), var(--red), var(--blue), var(--green));
+  }
+  .form-card {
+    background: var(--cream);
+    border: 2px solid var(--navy);
+    border-radius: 22px;
+    padding: 40px 32px;
+    box-shadow: var(--shadow-card);
+    margin-top: 24px;
+  }
+
+  .group-label {
+    font-family: 'Anton', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 0.04em;
+    color: var(--navy);
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--navy);
+    padding-bottom: 8px;
+    margin: 36px 0 18px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .group-label:first-of-type { margin-top: 0; }
+  .group-label .pill {
+    font-family: 'Archivo', sans-serif; font-weight: 700;
+    font-size: 11px; letter-spacing: 0.08em;
+    background: var(--yellow); color: var(--navy);
+    padding: 3px 10px; border-radius: 999px;
+    text-transform: uppercase;
+  }
+
+  /* entrega */
+  .entrega-box {
+    background: #fff;
+    border: 2px solid var(--navy);
+    border-radius: 14px;
+    padding: 18px 20px;
+    display: flex; flex-direction: column; gap: 12px;
+  }
+  .entrega-label {
+    font-size: 13px; font-weight: 700; color: var(--ink-soft);
+    text-transform: uppercase; letter-spacing: 0.08em;
+  }
+  .entrega-options { display: flex; flex-wrap: wrap; gap: 14px; }
+  .entrega-option {
+    flex: 1; min-width: 240px;
+    display: flex; align-items: center; gap: 10px;
+    background: var(--cream);
+    border: 2px solid var(--line);
+    padding: 14px 16px; border-radius: 12px;
+    cursor: pointer;
+    transition: border-color .15s, background .15s;
+  }
+  .entrega-option:hover { border-color: var(--navy); }
+  .entrega-option:has(input:checked) {
+    border-color: var(--green);
+    background: #EFFCEF;
+  }
+  .entrega-option input[type="radio"] {
+    accent-color: var(--green); width: 18px; height: 18px; cursor: pointer; flex-shrink: 0;
+  }
+  .entrega-option span { font-size: 15px; color: var(--navy); font-weight: 600; }
+
+  /* grid de cards */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 12px;
+  }
+  .card {
+    background: #fff;
+    border: 2px solid var(--line);
+    border-radius: 14px;
+    padding: 14px;
+    display: flex; flex-direction: column; gap: 12px;
+    transition: border-color .15s, transform .12s, box-shadow .15s;
+  }
+  .card:hover { border-color: var(--navy); transform: translateY(-2px); box-shadow: 0 6px 18px -8px rgba(10,26,64,0.25); }
+  .card.filled {
+    border-color: var(--green);
+    background: linear-gradient(180deg, #EFFCEF 0%, #fff 100%);
+    box-shadow: 0 6px 0 var(--green-deep);
+  }
+  .card-header { display: flex; align-items: center; gap: 10px; }
+  .card-flag {
+    flex-shrink: 0;
+    width: 38px; height: 28px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: var(--cream);
+    box-shadow: 0 0 0 1px rgba(10,26,64,0.18), 0 2px 4px rgba(10,26,64,0.12);
+    display: grid; place-items: center;
+  }
+  .card-flag img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+  }
+  .card-flag svg { width: 22px; height: 22px; color: var(--navy); }
+  .card.filled .card-flag svg { color: var(--green-deep); }
+  .card-name { font-size: 14px; font-weight: 700; color: var(--navy); line-height: 1.2; }
+  .card-sigla {
+    display: inline-block; margin-top: 2px;
+    font-size: 10px; font-weight: 800; letter-spacing: 0.1em;
+    color: var(--ink-soft);
+    background: var(--cream);
+    padding: 2px 6px; border-radius: 4px;
+  }
+  .card.filled .card-sigla { background: #fff; color: var(--green-deep); }
+  .card input {
+    width: 100%;
+    font-family: 'Archivo', sans-serif;
+    font-size: 14px; font-weight: 600;
+    padding: 9px 11px;
+    border: 2px solid var(--line);
+    border-radius: 8px;
+    background: var(--cream);
+    color: var(--navy);
+    outline: none;
+    transition: border-color .15s, background .15s;
+  }
+  .card input:focus { border-color: var(--navy); background: #fff; }
+  .card input::placeholder { color: rgba(10,26,64,0.35); font-weight: 500; }
+
+  /* actions */
+  .actions {
+    margin-top: 32px;
+    display: flex; flex-wrap: wrap; align-items: center; gap: 14px;
+  }
+  .btn-primary {
+    font-family: 'Anton', sans-serif;
+    font-size: 1.15rem;
+    letter-spacing: 0.05em; text-transform: uppercase;
+    background: var(--navy); color: #fff;
+    border: 0; border-radius: 12px;
+    padding: 14px 26px; cursor: pointer;
+    box-shadow: 0 5px 0 var(--yellow);
+    transition: transform .12s, box-shadow .15s, background .15s;
+  }
+  .btn-primary:hover { background: var(--navy-soft); }
+  .btn-primary:active { transform: translateY(3px); box-shadow: 0 2px 0 var(--yellow); }
+  .btn-secondary {
+    font-family: 'Archivo', sans-serif; font-weight: 700;
+    font-size: 14px;
+    background: #fff; color: var(--navy);
+    border: 2px solid var(--navy);
+    border-radius: 12px;
+    padding: 11px 18px; cursor: pointer;
+    display: none; align-items: center; gap: 8px;
+    transition: background .15s;
+  }
+  .btn-secondary.visible { display: inline-flex; }
+  .btn-secondary:hover { background: var(--cream); }
+  .copiado {
+    font-size: 14px; color: var(--green-deep); font-weight: 700;
+    display: none; align-items: center; gap: 6px;
+  }
+  .copiado.visible { display: inline-flex; }
+
+  .output-wrap { display: none; margin-top: 24px; }
+  .output-wrap.visible { display: block; }
+  .output-box {
+    background: #fff;
+    border: 2px solid var(--navy);
+    border-left: 8px solid var(--green);
+    border-radius: 14px;
+    padding: 22px 24px;
+  }
+  .output-label {
+    font-family: 'Anton', sans-serif;
+    font-size: 1.1rem; letter-spacing: 0.06em;
+    color: var(--navy);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .output-text {
+    font-size: 14.5px; line-height: 1.75;
+    white-space: pre-wrap; color: var(--ink); font-weight: 500;
+  }
+
+  /* whatsapp big CTA */
+  .wa-cta-wrap {
+    margin-top: 36px;
+    background: linear-gradient(135deg, #25D366 0%, #128C45 100%);
+    border-radius: 22px;
+    padding: 32px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 0 rgba(18,140,69,0.45);
+  }
+  .wa-cta-wrap::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(circle at 80% 30%, rgba(255,255,255,0.18), transparent 50%);
+  }
+  .wa-cta-wrap h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+    text-transform: uppercase;
+    line-height: 1; margin-bottom: 8px;
+    position: relative;
+  }
+  .wa-cta-wrap p { position: relative; opacity: 0.92; max-width: 480px; margin: 0 auto 20px; }
+  .wa-big-btn {
+    position: relative;
+    display: inline-flex; align-items: center; gap: 12px;
+    background: #fff; color: var(--whatsapp-d);
+    padding: 18px 32px; border-radius: 14px;
+    font-family: 'Anton', sans-serif; font-size: 22px;
+    letter-spacing: 0.05em; text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 6px 0 rgba(0,0,0,0.18);
+    transition: transform .15s, background .15s;
+  }
+  .wa-big-btn:hover { background: var(--cream); transform: translateY(-2px); }
+  .wa-big-btn:active { transform: translateY(2px); box-shadow: 0 2px 0 rgba(0,0,0,0.18); }
+
+  /* ============ TABELA DE PRECOS ============ */
+  .pricing {
+    background: linear-gradient(180deg, var(--navy) 0%, var(--navy-deep) 100%);
+    color: #fff;
+    padding: 90px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .pricing::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.05) 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+  .pricing .section-eyebrow { background: var(--yellow); color: var(--navy); }
+  .pricing .section-title { color: #fff; }
+  .pricing .section-title em { color: var(--yellow); }
+  .pricing .section-title em::after { background: var(--red); }
+  .pricing .section-sub { color: rgba(255,255,255,0.7); }
+  .price-image-wrap {
+    position: relative;
+    max-width: 520px; margin: 36px auto 0;
+    border-radius: 24px; overflow: hidden;
+    border: 4px solid var(--yellow);
+    box-shadow: 0 20px 60px -20px rgba(0,0,0,0.6), 0 0 0 8px rgba(255,198,41,0.12);
+    transform: rotate(-1deg);
+    transition: transform .3s;
+  }
+  .price-image-wrap:hover { transform: rotate(0deg) scale(1.01); }
+  .price-image-wrap img { display: block; width: 100%; height: auto; }
+  .price-image-wrap .corner {
+    position: absolute;
+    background: var(--yellow); color: var(--navy);
+    font-family: 'Anton', sans-serif;
+    padding: 10px 18px; border-radius: 10px;
+    font-size: 18px; letter-spacing: 0.04em;
+    text-transform: uppercase;
+    box-shadow: 0 4px 0 var(--red);
+  }
+  .price-image-wrap .corner.tl { top: 14px; left: -8px; transform: rotate(-6deg); }
+  .price-image-note {
+    text-align: center; max-width: 520px; margin: 22px auto 0;
+    color: rgba(255,255,255,0.72); font-size: 14px;
+  }
+
+  /* ============ FAQ ============ */
+  .faq {
+    background: var(--paper);
+    padding: 90px 0 80px;
+  }
+  .faq-list {
+    max-width: 780px; margin: 0 auto;
+    display: flex; flex-direction: column; gap: 12px;
+  }
+  .faq-item {
+    background: #fff;
+    border: 2px solid var(--line);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: border-color .15s;
+  }
+  .faq-item[open] { border-color: var(--navy); box-shadow: 0 4px 0 var(--yellow); }
+  .faq-item summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 18px 22px;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    font-family: 'Archivo', sans-serif; font-weight: 800;
+    font-size: 16px; color: var(--navy);
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item .toggle {
+    flex-shrink: 0;
+    width: 32px; height: 32px; border-radius: 50%;
+    background: var(--cream); color: var(--navy);
+    display: grid; place-items: center;
+    transition: transform .25s, background .15s;
+    font-family: 'Anton', sans-serif; font-size: 18px;
+  }
+  .faq-item[open] .toggle {
+    background: var(--yellow); transform: rotate(45deg);
+  }
+  .faq-item .answer {
+    padding: 0 22px 20px;
+    color: var(--ink-soft); font-size: 15px; line-height: 1.65;
+  }
+  .faq-item .answer strong { color: var(--navy); }
+
+  /* ============ FOOTER ============ */
+  footer.site-footer {
+    background: var(--navy-deep);
+    color: rgba(255,255,255,0.72);
+    padding: 40px 20px 32px;
+    text-align: center;
+    border-top: 4px solid var(--yellow);
+  }
+  footer.site-footer .ftr-brand {
+    font-family: 'Anton', sans-serif; color: #fff;
+    font-size: 22px; text-transform: uppercase;
+    margin-bottom: 4px; letter-spacing: 0.04em;
+  }
+  footer.site-footer .ftr-brand span { color: var(--yellow); }
+  footer.site-footer .ftr-line { font-size: 14px; }
+  footer.site-footer a { color: var(--yellow); text-decoration: none; font-weight: 700; }
+  footer.site-footer .ftr-social {
+    margin-top: 18px;
+    display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
+  }
+  .ftr-social-link {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 9px 16px; border-radius: 999px;
+    color: #fff; text-decoration: none;
+    font-weight: 700; font-size: 13px;
+    transition: transform .15s, filter .15s;
+  }
+  .ftr-social-link:hover { transform: translateY(-2px); filter: brightness(1.08); }
+  .ftr-ig { background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+  .ftr-wa { background: var(--whatsapp); }
+  footer.site-footer .ftr-meta {
+    margin-top: 20px;
+    display: flex; gap: 18px; justify-content: center; flex-wrap: wrap;
+    font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase;
+    color: rgba(255,255,255,0.45);
+  }
+
+  /* floating whatsapp */
+  .wa-float {
+    position: fixed; bottom: 22px; right: 22px; z-index: 60;
+    background: var(--whatsapp);
+    color: #fff;
+    width: 60px; height: 60px;
+    border-radius: 50%;
+    display: grid; place-items: center;
+    box-shadow: 0 10px 30px rgba(18,140,69,0.45);
+    text-decoration: none;
+    transition: transform .15s, background .15s;
+  }
+  .wa-float:hover { background: var(--whatsapp-d); transform: scale(1.05); }
+  .wa-float::after {
+    content: '';
+    position: absolute; inset: -6px;
+    border-radius: 50%;
+    background: rgba(37,211,102,0.4);
+    z-index: -1;
+    animation: pulse-ring 2s infinite;
+  }
+  @keyframes pulse-ring {
+    0% { transform: scale(0.9); opacity: 0.7; }
+    100% { transform: scale(1.4); opacity: 0; }
+  }
+
+  @media (max-width: 500px) {
+    .grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+    .form-card { padding: 24px 18px; border-radius: 16px; }
+    .group-label { font-size: 1.15rem; }
+    .entrega-options { flex-direction: column; }
+    .entrega-option { min-width: 0; }
+    .actions { flex-direction: column; align-items: stretch; }
+    .actions .btn-primary, .actions .btn-secondary { width: 100%; justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="#top">
+      <div class="dot">C</div>
+      <div class="handle">@completeseu<span>albumdf</span></div>
+    </a>
+    <div class="nav-links">
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#orcamento">Orçamento</a>
+      <a href="#precos">Preços</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="nav-actions">
+      <a class="nav-ig" href="https://instagram.com/completeseualbumdf" target="_blank" rel="noopener" aria-label="Instagram @completeseualbumdf">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>
+      </a>
+      <a class="nav-cta" href="#orcamento">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11.8 11.8 0 0012 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.7.9 3.7 1.4 5.7 1.4h.1c6.6 0 12-5.4 12-12 0-3.2-1.3-6.2-3.5-8.3zM12 21.8c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.7 9.7 0 012.2 12c0-5.4 4.4-9.8 9.8-9.8 2.6 0 5.1 1 6.9 2.9 1.8 1.9 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm5.4-7.3c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.4-1.5a8.8 8.8 0 01-1.6-2c-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <div>
+      <span class="hero-tag"><span class="pulse"></span>Estoque atualizado · Copa 2026</span>
+      <h1>
+        Sem repetidas.<br/>
+        <span class="underline">Só</span> as figurinhas<br/>
+        <span class="stroke">que faltam.</span>
+      </h1>
+      <p class="lead">Compre figurinhas avulsas da Panini Copa do Mundo 2026 e termine seu álbum sem desperdiçar dinheiro com pacotinhos.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-yellow btn-lg" href="#orcamento">
+          Fazer orçamento agora
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost btn-lg" href="#como-funciona">Como funciona</a>
+      </div>
+      <div class="hero-delivery">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7M5.5 21a2.5 2.5 0 100-5 2.5 2.5 0 000 5zm13 0a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"/></svg>
+        <span>Entregas para <strong>Brasília</strong> e para <strong>todo o Brasil</strong></span>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="glow"></div>
+      <img class="logo-img" src="assets/logo.png" alt="Complete seu álbum 2026" />
+      <div class="sparkle s1"><span class="h">só o que falta</span></div>
+      <div class="sparkle s2"><span class="h">chega de repetidas!</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ APRESENTACAO ============ -->
+<section class="pitch">
+  <div class="container">
+    <div class="pitch-grid">
+      <div class="pitch-copy">
+        <h2>Cansado de abrir pacotinho<br/>e cair <span class="hl">repetida?</span></h2>
+        <p>A partir de certo ponto, comprar pacotinho vira <strong>desperdício puro</strong>: você gasta uma nota, abre 7 figurinhas e a metade você já tem.</p>
+        <p>A solução é simples e direta — comprar <strong>só as avulsas que faltam</strong> pra fechar o álbum.</p>
+        <p>É exatamente isso que a <strong>@completeseualbumdf</strong> faz: estoque atualizado, atendimento rápido pelo WhatsApp e a figurinha certinha na sua mão.</p>
+        <span class="scribble">↳ você manda a lista, a gente fecha o álbum.</span>
+      </div>
+      <div class="pitch-art">
+        <div class="ring"></div>
+        <img class="mascote" src="assets/mascote.png" alt="Mascote pacote de figurinhas" />
+        <div class="speech-bubble b1">Chega de repetidas!</div>
+        <div class="badge-tilt b2">Estoque pronto</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMO FUNCIONA ============ -->
+<section class="how" id="como-funciona">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Em 3 passos</span>
+      <h2 class="section-title">Como <em>funciona</em></h2>
+      <p class="section-sub">Da sua lista até a entrega, em minutos. Você não precisa criar conta, baixar app, nem nada disso.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg>
+        </div>
+        <h3>1. Preencha o formulário</h3>
+        <p>Marque na lista as figurinhas que você precisa de cada seleção e seção do álbum.</p>
+        <div class="arrow">
+          <svg width="32" height="20" viewBox="0 0 32 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 10h26m0 0l-7-7m7 7l-7 7"/></svg>
+        </div>
+      </div>
+      <div class="step">
+        <div class="icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/></svg>
+        </div>
+        <h3>2. Copie e mande no zap</h3>
+        <p>A gente gera o texto pronto. Você só copia, abre o WhatsApp pelo botão e cola.</p>
+        <div class="arrow">
+          <svg width="32" height="20" viewBox="0 0 32 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 10h26m0 0l-7-7m7 7l-7 7"/></svg>
+        </div>
+      </div>
+      <div class="step">
+        <div class="icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4M3 7v10l9 4 9-4V7M3 7l9 4 9-4M12 11v10"/></svg>
+        </div>
+        <h3>3. Receba o orçamento</h3>
+        <p>Conferimos a disponibilidade e voltamos rapidinho com valor e formas de entrega ou retirada.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FORMULARIO DE ORCAMENTO ============ -->
+<section class="form-section" id="orcamento">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Lista de figurinhas</span>
+      <h2 class="section-title">Monte seu <em>orçamento</em></h2>
+      <p class="section-sub">Preencha apenas os campos das figurinhas que você precisa — os campos vazios são ignorados. Use o formato <strong>1-3-7-22</strong> separando os números por traço.</p>
+    </div>
+
+    <div class="form-card">
+      <p class="group-label"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"/></svg> Forma de entrega <span class="pill">passo 1</span></p>
+      <div class="entrega-box">
+        <p class="entrega-label">Como você prefere receber suas figurinhas?</p>
+        <div class="entrega-options">
+          <label class="entrega-option">
+            <input type="radio" name="entrega" value="Entrega/Retirada em Brasília-DF" />
+            <span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-4px;margin-right:6px;"><path d="M6 22V11M18 22V11M2 22h20M4 11V7l8-5 8 5v4M9 22v-6h6v6"/></svg>Entrega / Retirada em Brasília-DF</span>
+          </label>
+          <label class="entrega-option">
+            <input type="radio" name="entrega" value="Envio para todo o Brasil" />
+            <span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-4px;margin-right:6px;"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7M5.5 21a2.5 2.5 0 100-5 2.5 2.5 0 000 5zm13 0a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"/></svg>Envio para todo o Brasil</span>
+          </label>
+        </div>
+      </div>
+
+      <p class="group-label"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 010-5H6M18 9h1.5a2.5 2.5 0 000-5H18M4 22h16M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22M18 2H6v7a6 6 0 0012 0V2z"/></svg> Início / FWC <span class="pill">passo 2</span></p>
+      <div class="grid" id="grid-inicio"></div>
+
+      <p class="group-label"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2l2.5 5.5L20 8l-3 4 1 6-6-3-6 3 1-6-3-4 5.5-.5z"/></svg> Seleções <span class="pill">48 países</span></p>
+      <div class="grid" id="grid-selecoes"></div>
+
+      <p class="group-label"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg> Especiais</p>
+      <div class="grid" id="grid-especiais"></div>
+
+      <div class="actions">
+        <button class="btn-primary" onclick="gerarMensagem()">Gerar mensagem para orçamento</button>
+        <button class="btn-secondary" id="btn-copiar" onclick="copiarTexto()">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+          Copiar mensagem
+        </button>
+        <span class="copiado" id="copiado">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+          Copiado!
+        </span>
+      </div>
+
+      <div class="output-wrap" id="output-wrap">
+        <div class="output-box">
+          <p class="output-label">Mensagem gerada</p>
+          <p class="output-text" id="output-text"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- WhatsApp CTA -->
+    <div class="wa-cta-wrap">
+      <h3>Pronto pra fechar o álbum?</h3>
+      <p>Já preencheu, copiou a mensagem? É só clicar abaixo, colar no chat e mandar. A gente te responde rapidinho.</p>
+      <a class="wa-big-btn" href="https://wa.me/5561995676402?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20figurinhas." target="_blank" rel="noopener">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11.8 11.8 0 0012 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.7.9 3.7 1.4 5.7 1.4h.1c6.6 0 12-5.4 12-12 0-3.2-1.3-6.2-3.5-8.3zM12 21.8c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.7 9.7 0 012.2 12c0-5.4 4.4-9.8 9.8-9.8 2.6 0 5.1 1 6.9 2.9 1.8 1.9 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm5.4-7.3c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.4-1.5a8.8 8.8 0 01-1.6-2c-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+        Falar no WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TABELA DE PRECOS ============ -->
+<section class="pricing" id="precos">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Tabela de valores</span>
+      <h2 class="section-title">Preço por <em>figurinha</em></h2>
+      <p class="section-sub">Valores por unidade, atualizados pela equipe @completeseualbumdf. Quanto mais raro o cromo, mais cobiçado — e o orçamento sai certinho de acordo com sua lista.</p>
+    </div>
+    <div class="price-image-wrap">
+      <span class="corner tl">Atualizado</span>
+      <img src="assets/tabela-precos.jpeg" alt="Tabela de preços das figurinhas Copa 2026" />
+    </div>
+    <p class="price-image-note">* Valores sujeitos a alteração conforme disponibilidade. O orçamento final é fechado pelo WhatsApp.</p>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Dúvidas</span>
+      <h2 class="section-title">Perguntas <em>frequentes</em></h2>
+      <p class="section-sub">Reunimos as perguntas que mais chegam pra gente no direct e no zap.</p>
+    </div>
+    <div class="faq-list">
+
+      <details class="faq-item">
+        <summary>Vocês vendem figurinhas de qualquer seleção do álbum? <span class="toggle">+</span></summary>
+        <div class="answer">Sim! Trabalhamos com figurinhas avulsas de <strong>todas as seleções e categorias</strong> do álbum da Copa 2026, incluindo as especiais.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Como sei se vocês têm a figurinha que eu preciso? <span class="toggle">+</span></summary>
+        <div class="answer">Preencha o formulário com as figurinhas que deseja, envie pelo WhatsApp e nós <strong>verificamos a disponibilidade no estoque</strong> e já te retornamos com o orçamento.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Vocês entregam fora de Brasília? <span class="toggle">+</span></summary>
+        <div class="answer">Sim! Fazemos <strong>envio para todo o Brasil</strong> por diferentes plataformas, consulte disponibilidade e funcionamento via WhatsApp. Para clientes de Brasília-DF, também podemos combinar <strong>entrega ou retirada presencial</strong> pelo WhatsApp.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Qual o prazo de entrega para comprar fora de Brasília-DF? <span class="toggle">+</span></summary>
+        <div class="answer">Para envios pelo Brasil, o prazo varia conforme a plataforma escolhida. Por exemplo: ao comprar pelo <strong>Mercado Livre</strong>, é criado um link correspondente ao seu pedido e os prazos de entrega variam de acordo com a logística do Mercado Livre.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Tem valor mínimo de pedido? <span class="toggle">+</span></summary>
+        <div class="answer">Consulte nossa <strong>tabela de preços</strong> ou pergunte pelo WhatsApp.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>As figurinhas são originais? <span class="toggle">+</span></summary>
+        <div class="answer">Sim, todas as figurinhas são <strong>originais Panini</strong> ou das colaboradoras (<strong>Coca-Cola e McDonald's</strong>).</div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="ftr-brand">@completeseu<span>albumdf</span></div>
+  <p class="ftr-line">Figurinhas avulsas Copa do Mundo 2026 · Brasília-DF e todo o Brasil</p>
+  <p class="ftr-line" style="margin-top: 6px;">Fale com a gente: <a href="https://wa.me/5561995676402" target="_blank" rel="noopener">+55 61 99567-6402</a></p>
+  <div class="ftr-social">
+    <a href="https://instagram.com/completeseualbumdf" target="_blank" rel="noopener" class="ftr-social-link ftr-ig" aria-label="Instagram">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>
+      <span>@completeseualbumdf</span>
+    </a>
+    <a href="https://wa.me/5561995676402" target="_blank" rel="noopener" class="ftr-social-link ftr-wa" aria-label="WhatsApp">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11.8 11.8 0 0012 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.7.9 3.7 1.4 5.7 1.4h.1c6.6 0 12-5.4 12-12 0-3.2-1.3-6.2-3.5-8.3zM12 21.8c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.7 9.7 0 012.2 12c0-5.4 4.4-9.8 9.8-9.8 2.6 0 5.1 1 6.9 2.9 1.8 1.9 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8z"/></svg>
+      <span>+55 61 99567-6402</span>
+    </a>
+  </div>
+  <div class="ftr-meta">
+    <span>© 2026 Complete Seu Álbum DF</span>
+    <span>Não somos afiliados à Panini ou à FIFA</span>
+  </div>
+</footer>
+
+<!-- floating WhatsApp -->
+<a class="wa-float" href="https://wa.me/5561995676402?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20figurinhas." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11.8 11.8 0 0012 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.7.9 3.7 1.4 5.7 1.4h.1c6.6 0 12-5.4 12-12 0-3.2-1.3-6.2-3.5-8.3zM12 21.8c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.7 9.7 0 012.2 12c0-5.4 4.4-9.8 9.8-9.8 2.6 0 5.1 1 6.9 2.9 1.8 1.9 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm5.4-7.3c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.4-1.5a8.8 8.8 0 01-1.6-2c-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
+
+<script>
+  /* ============================================================
+     LOGICA DO FORMULARIO — preservada integralmente do original
+     ============================================================ */
+  const inicio = [
+    { flag: "🏆", name: "Início / FWC", sigla: "FWC", id: "FWC" }
+  ];
+
+  const selecoes = [
+    { flag: "🇲🇽", name: "México", sigla: "MEX", id: "MEX" },
+    { flag: "🇿🇦", name: "África do Sul", sigla: "RSA", id: "RSA" },
+    { flag: "🇰🇷", name: "Coreia do Sul", sigla: "KOR", id: "KOR" },
+    { flag: "🇨🇿", name: "Rep. Tcheca", sigla: "CZE", id: "CZE" },
+    { flag: "🇨🇦", name: "Canadá", sigla: "CAN", id: "CAN" },
+    { flag: "🇧🇦", name: "Bósnia", sigla: "BIH", id: "BIH" },
+    { flag: "🇶🇦", name: "Catar", sigla: "QAT", id: "QAT" },
+    { flag: "🇨🇭", name: "Suíça", sigla: "SUI", id: "SUI" },
+    { flag: "🇧🇷", name: "Brasil", sigla: "BRA", id: "BRA" },
+    { flag: "🇲🇦", name: "Marrocos", sigla: "MAR", id: "MAR" },
+    { flag: "🇭🇹", name: "Haiti", sigla: "HAI", id: "HAI" },
+    { flag: "🏴󠁧󠁢󠁳󠁣󠁯󠁿", name: "Escócia", sigla: "SCO", id: "SCO" },
+    { flag: "🇺🇸", name: "Estados Unidos", sigla: "USA", id: "USA" },
+    { flag: "🇵🇾", name: "Paraguai", sigla: "PAR", id: "PAR" },
+    { flag: "🇦🇺", name: "Austrália", sigla: "AUS", id: "AUS" },
+    { flag: "🇹🇷", name: "Turquia", sigla: "TUR", id: "TUR" },
+    { flag: "🇩🇪", name: "Alemanha", sigla: "GER", id: "GER" },
+    { flag: "🇨🇼", name: "Curaçao", sigla: "CUW", id: "CUW" },
+    { flag: "🇨🇮", name: "Costa do Marfim", sigla: "CIV", id: "CIV" },
+    { flag: "🇪🇨", name: "Equador", sigla: "ECU", id: "ECU" },
+    { flag: "🇳🇱", name: "Holanda", sigla: "NED", id: "NED" },
+    { flag: "🇯🇵", name: "Japão", sigla: "JPN", id: "JPN" },
+    { flag: "🇸🇪", name: "Suécia", sigla: "SWE", id: "SWE" },
+    { flag: "🇹🇳", name: "Tunísia", sigla: "TUN", id: "TUN" },
+    { flag: "🇧🇪", name: "Bélgica", sigla: "BEL", id: "BEL" },
+    { flag: "🇪🇬", name: "Egito", sigla: "EGY", id: "EGY" },
+    { flag: "🇮🇷", name: "Irã", sigla: "IRN", id: "IRN" },
+    { flag: "🇳🇿", name: "Nova Zelândia", sigla: "NZL", id: "NZL" },
+    { flag: "🇪🇸", name: "Espanha", sigla: "ESP", id: "ESP" },
+    { flag: "🇨🇻", name: "Cabo Verde", sigla: "CPV", id: "CPV" },
+    { flag: "🇸🇦", name: "Arábia Saudita", sigla: "KSA", id: "KSA" },
+    { flag: "🇺🇾", name: "Uruguai", sigla: "URU", id: "URU" },
+    { flag: "🇫🇷", name: "França", sigla: "FRA", id: "FRA" },
+    { flag: "🇸🇳", name: "Senegal", sigla: "SEN", id: "SEN" },
+    { flag: "🇮🇶", name: "Iraque", sigla: "IRQ", id: "IRQ" },
+    { flag: "🇳🇴", name: "Noruega", sigla: "NOR", id: "NOR" },
+    { flag: "🇦🇷", name: "Argentina", sigla: "ARG", id: "ARG" },
+    { flag: "🇩🇿", name: "Argélia", sigla: "ALG", id: "ALG" },
+    { flag: "🇦🇹", name: "Áustria", sigla: "AUT", id: "AUT" },
+    { flag: "🇯🇴", name: "Jordânia", sigla: "JOR", id: "JOR" },
+    { flag: "🇵🇹", name: "Portugal", sigla: "POR", id: "POR" },
+    { flag: "🇨🇬", name: "Congo", sigla: "COP", id: "COP" },
+    { flag: "🇺🇿", name: "Uzbequistão", sigla: "UZB", id: "UZB" },
+    { flag: "🇨🇴", name: "Colômbia", sigla: "COL", id: "COL" },
+    { flag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿", name: "Inglaterra", sigla: "ENG", id: "ENG" },
+    { flag: "🇭🇷", name: "Croácia", sigla: "CRO", id: "CRO" },
+    { flag: "🇬🇭", name: "Gana", sigla: "GHA", id: "GHA" },
+    { flag: "🇵🇦", name: "Panamá", sigla: "PAN", id: "PAN" },
+  ];
+
+  const especiais = [
+    { flag: "📚", name: "História da Copa", sigla: "FWC", id: "HIST" },
+    { flag: "🥤", name: "Coca-Cola", sigla: "CC", id: "CC" },
+  ];
+
+  // ISO3 -> flagcdn code (ISO2 ou subdivisão GB)
+  const FLAG_CODES = {
+    MEX:'mx', RSA:'za', KOR:'kr', CZE:'cz', CAN:'ca', BIH:'ba', QAT:'qa', SUI:'ch',
+    BRA:'br', MAR:'ma', HAI:'ht', SCO:'gb-sct', USA:'us', PAR:'py', AUS:'au', TUR:'tr',
+    GER:'de', CUW:'cw', CIV:'ci', ECU:'ec', NED:'nl', JPN:'jp', SWE:'se', TUN:'tn',
+    BEL:'be', EGY:'eg', IRN:'ir', NZL:'nz', ESP:'es', CPV:'cv', KSA:'sa', URU:'uy',
+    FRA:'fr', SEN:'sn', IRQ:'iq', NOR:'no', ARG:'ar', ALG:'dz', AUT:'at', JOR:'jo',
+    POR:'pt', COP:'cg', UZB:'uz', COL:'co', ENG:'gb-eng', CRO:'hr', GHA:'gh', PAN:'pa'
+  };
+
+  // ícones inline para itens sem bandeira de país
+  const SPECIAL_ICONS = {
+    FWC:  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 010-5H6M18 9h1.5a2.5 2.5 0 000-5H18M4 22h16M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22M18 2H6v7a6 6 0 0012 0V2z"/></svg>',
+    HIST: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20V3H6.5A2.5 2.5 0 004 5.5v14zM4 19.5V21h15"/></svg>',
+    CC:   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10l-1 4H8L7 3zM8 7l1 13a2 2 0 002 2h2a2 2 0 002-2l1-13M9 11h6"/></svg>'
+  };
+
+  function flagHtml(item) {
+    const code = FLAG_CODES[item.id];
+    if (code) {
+      return `<img src="https://flagcdn.com/w80/${code}.png" srcset="https://flagcdn.com/w160/${code}.png 2x" alt="${item.name}" loading="lazy" />`;
+    }
+    return SPECIAL_ICONS[item.id] || item.flag;
+  }
+
+  function renderGrid(containerId, items) {
+    const grid = document.getElementById(containerId);
+    items.forEach(item => {
+      const card = document.createElement("div");
+      card.className = "card";
+      card.id = "card-" + item.id;
+      card.innerHTML = `
+        <div class="card-header">
+          <span class="card-flag">${flagHtml(item)}</span>
+          <div>
+            <div class="card-name">${item.name}</div>
+            <div class="card-sigla">${item.sigla}</div>
+          </div>
+        </div>
+        <input type="text" id="input-${item.id}" placeholder="ex: 1-3-7" aria-label="Figurinhas de ${item.name}" oninput="toggleFilled('${item.id}')" />
+      `;
+      grid.appendChild(card);
+    });
+  }
+
+  function toggleFilled(id) {
+    const val = document.getElementById("input-" + id).value.trim();
+    document.getElementById("card-" + id).classList.toggle("filled", val.length > 0);
+  }
+
+  renderGrid("grid-inicio", inicio);
+  renderGrid("grid-selecoes", selecoes);
+  renderGrid("grid-especiais", especiais);
+
+  function gerarMensagem() {
+    const entregaEl = document.querySelector('input[name="entrega"]:checked');
+    const entrega = entregaEl ? entregaEl.value : null;
+
+    const todos = [...inicio, ...selecoes, ...especiais];
+    const linhas = [];
+
+    todos.forEach(item => {
+      const val = document.getElementById("input-" + item.id).value.trim();
+      if (!val) return;
+      if (item.id === "FWC") {
+        linhas.push(`🏆 Início / FWC (1 a 8): ${val}`);
+      } else if (item.id === "HIST") {
+        linhas.push(`📚 História da Copa (FWC): ${val}`);
+      } else if (item.id === "CC") {
+        linhas.push(`🥤 Coca-Cola (CC): ${val}`);
+      } else {
+        linhas.push(`${item.flag} ${item.name} (${item.sigla}): ${val}`);
+      }
+    });
+
+    const outputWrap = document.getElementById("output-wrap");
+    const outputText = document.getElementById("output-text");
+    const btnCopiar = document.getElementById("btn-copiar");
+
+    if (linhas.length === 0 && !entrega) {
+      outputText.textContent = "Nenhuma figurinha preenchida ainda.";
+      outputWrap.classList.add("visible");
+      btnCopiar.classList.remove("visible");
+      return;
+    }
+
+    let mensagem = "Olá! Gostaria de fazer um orçamento para as seguintes figurinhas da Copa 2026:\n";
+
+    if (entrega) {
+      mensagem += `\n📦 Entrega: ${entrega}\n`;
+    }
+
+    if (linhas.length > 0) {
+      mensagem += "\n" + linhas.join("\n");
+    }
+
+    outputText.textContent = mensagem;
+    outputWrap.classList.add("visible");
+    btnCopiar.classList.add("visible");
+    document.getElementById("copiado").classList.remove("visible");
+    outputWrap.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }
+
+  function copiarTexto() {
+    const texto = document.getElementById("output-text").textContent;
+    navigator.clipboard.writeText(texto).then(() => {
+      document.getElementById("copiado").classList.add("visible");
+      setTimeout(() => document.getElementById("copiado").classList.remove("visible"), 2500);
+    });
+  }
+</script>
+
+</body>
+</html>
