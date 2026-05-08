@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Figurinhas Copa 2026 — Orçamento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green: #1a5c2e;
+      --green-mid: #22783b;
+      --green-light: #2ea64f;
+      --gold: #d4a017;
+      --gold-light: #f0c040;
+      --cream: #faf7f0;
+      --cream-dark: #f0ebe0;
+      --text: #1a1a1a;
+      --text-muted: #5a5a5a;
+      --border: rgba(26,92,46,0.15);
+      --radius: 10px;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background-color: var(--cream);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    .hero {
+      background: var(--green);
+      padding: 3rem 2rem 2.5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(45deg, transparent, transparent 18px, rgba(255,255,255,0.03) 18px, rgba(255,255,255,0.03) 19px);
+    }
+    .hero-badge {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--green);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      padding: 4px 14px;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+    .hero h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2.4rem, 6vw, 4rem);
+      color: #fff;
+      line-height: 1.05;
+      letter-spacing: 0.02em;
+      position: relative;
+    }
+    .hero h1 span { color: var(--gold-light); }
+    .hero p {
+      color: rgba(255,255,255,0.7);
+      font-size: 15px;
+      margin-top: 0.75rem;
+      font-weight: 300;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+    }
+
+    .main { max-width: 960px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+
+    .section-label {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.1em;
+      color: var(--green);
+      border-bottom: 1.5px solid var(--border);
+      padding-bottom: 6px;
+      margin-bottom: 1rem;
+      margin-top: 2.5rem;
+    }
+    .section-label:first-of-type { margin-top: 0; }
+
+    /* ENTREGA */
+    .entrega-box {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .entrega-label {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+    .entrega-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .entrega-option {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+    }
+    .entrega-option input[type="radio"] {
+      accent-color: var(--green);
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    .entrega-option span {
+      font-size: 14px;
+      color: var(--text);
+      font-weight: 400;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+      gap: 10px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 0.85rem 0.9rem;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .card:hover { border-color: rgba(26,92,46,0.35); box-shadow: 0 2px 12px rgba(26,92,46,0.08); }
+    .card.filled { border-color: var(--green-light); background: #f4fbf6; }
+
+    .card-header { display: flex; align-items: center; gap: 9px; }
+    .card-flag { font-size: 22px; line-height: 1; flex-shrink: 0; }
+    .card-name { font-size: 13px; font-weight: 500; color: var(--text); line-height: 1.3; }
+    .card-sigla { font-size: 11px; color: var(--text-muted); font-weight: 300; }
+
+    .card input {
+      width: 100%;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      padding: 6px 9px;
+      border: 1px solid rgba(0,0,0,0.12);
+      border-radius: 6px;
+      background: var(--cream);
+      color: var(--text);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .card input:focus { border-color: var(--green-light); background: #fff; }
+    .card input::placeholder { color: #aaa; font-weight: 300; }
+
+    .actions {
+      margin-top: 2.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-primary {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.05rem;
+      letter-spacing: 0.1em;
+      background: var(--green);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius);
+      padding: 11px 28px;
+      cursor: pointer;
+      transition: background 0.15s, transform 0.1s;
+    }
+    .btn-primary:hover { background: var(--green-mid); }
+    .btn-primary:active { transform: scale(0.97); }
+
+    .btn-secondary {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      background: #fff;
+      color: var(--green);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 10px 20px;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      gap: 7px;
+      transition: background 0.15s;
+    }
+    .btn-secondary.visible { display: flex; }
+    .btn-secondary:hover { background: var(--cream-dark); }
+
+    .copiado {
+      font-size: 13px;
+      color: var(--green-light);
+      font-weight: 500;
+      display: none;
+      align-items: center;
+      gap: 5px;
+    }
+    .copiado.visible { display: flex; }
+
+    .output-wrap { display: none; margin-top: 1.5rem; }
+    .output-wrap.visible { display: block; }
+
+    .output-box {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--green-light);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+    }
+    .output-label {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 0.95rem;
+      letter-spacing: 0.08em;
+      color: var(--green);
+      margin-bottom: 0.75rem;
+    }
+    .output-text {
+      font-size: 14px;
+      line-height: 1.8;
+      white-space: pre-wrap;
+      color: var(--text);
+      font-weight: 300;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+      padding: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-weight: 300;
+    }
+
+    @media (max-width: 500px) {
+      .grid { grid-template-columns: repeat(auto-fill, minmax(145px, 1fr)); }
+      .hero { padding: 2rem 1.25rem 2rem; }
+      .entrega-options { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-badge">Copa do Mundo 2026</div>
+    <h1>Complete seu <span>álbum</span></h1>
+    <p>Preencha os números das figurinhas que você precisa em cada seleção e gere sua mensagem de orçamento.</p>
+  </header>
+
+  <main class="main">
+
+    <p class="section-label">📦 Forma de entrega</p>
+    <div class="entrega-box">
+      <p class="entrega-label">Como você prefere receber suas figurinhas?</p>
+      <div class="entrega-options">
+        <label class="entrega-option">
+          <input type="radio" name="entrega" value="Entrega/Retirada em Brasília-DF" />
+          <span>🏙️ Entrega / Retirada em Brasília-DF</span>
+        </label>
+        <label class="entrega-option">
+          <input type="radio" name="entrega" value="Envio para todo o Brasil" />
+          <span>🚚 Envio para todo o Brasil</span>
+        </label>
+      </div>
+    </div>
+
+    <p class="section-label">🏆 Início / FWC</p>
+    <div class="grid" id="grid-inicio"></div>
+
+    <p class="section-label">⚽ Seleções</p>
+    <div class="grid" id="grid-selecoes"></div>
+
+    <p class="section-label">✨ Especiais</p>
+    <div class="grid" id="grid-especiais"></div>
+
+    <div class="actions">
+      <button class="btn-primary" onclick="gerarMensagem()">Gerar mensagem para orçamento</button>
+      <button class="btn-secondary" id="btn-copiar" onclick="copiarTexto()">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+        Copiar mensagem
+      </button>
+      <span class="copiado" id="copiado">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+        Copiado!
+      </span>
+    </div>
+
+    <div class="output-wrap" id="output-wrap">
+      <div class="output-box">
+        <p class="output-label">Mensagem gerada</p>
+        <p class="output-text" id="output-text"></p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    Preencha apenas os campos das figurinhas que você precisa — os campos vazios serão ignorados.
+  </footer>
+
+  <script>
+    const inicio = [
+      { flag: "🏆", name: "Início / FWC", sigla: "FWC", id: "FWC" }
+    ];
+
+    const selecoes = [
+      { flag: "🇲🇽", name: "México", sigla: "MEX", id: "MEX" },
+      { flag: "🇿🇦", name: "África do Sul", sigla: "RSA", id: "RSA" },
+      { flag: "🇰🇷", name: "Coreia do Sul", sigla: "KOR", id: "KOR" },
+      { flag: "🇨🇿", name: "Rep. Tcheca", sigla: "CZE", id: "CZE" },
+      { flag: "🇨🇦", name: "Canadá", sigla: "CAN", id: "CAN" },
+      { flag: "🇧🇦", name: "Bósnia", sigla: "BIH", id: "BIH" },
+      { flag: "🇶🇦", name: "Catar", sigla: "QAT", id: "QAT" },
+      { flag: "🇨🇭", name: "Suíça", sigla: "SUI", id: "SUI" },
+      { flag: "🇧🇷", name: "Brasil", sigla: "BRA", id: "BRA" },
+      { flag: "🇲🇦", name: "Marrocos", sigla: "MAR", id: "MAR" },
+      { flag: "🇭🇹", name: "Haiti", sigla: "HAI", id: "HAI" },
+      { flag: "🏴󠁧󠁢󠁳󠁣󠁯󠁿", name: "Escócia", sigla: "SCO", id: "SCO" },
+      { flag: "🇺🇸", name: "Estados Unidos", sigla: "USA", id: "USA" },
+      { flag: "🇵🇾", name: "Paraguai", sigla: "PAR", id: "PAR" },
+      { flag: "🇦🇺", name: "Austrália", sigla: "AUS", id: "AUS" },
+      { flag: "🇹🇷", name: "Turquia", sigla: "TUR", id: "TUR" },
+      { flag: "🇩🇪", name: "Alemanha", sigla: "GER", id: "GER" },
+      { flag: "🇨🇼", name: "Curaçao", sigla: "CUW", id: "CUW" },
+      { flag: "🇨🇮", name: "Costa do Marfim", sigla: "CIV", id: "CIV" },
+      { flag: "🇪🇨", name: "Equador", sigla: "ECU", id: "ECU" },
+      { flag: "🇳🇱", name: "Holanda", sigla: "NED", id: "NED" },
+      { flag: "🇯🇵", name: "Japão", sigla: "JPN", id: "JPN" },
+      { flag: "🇸🇪", name: "Suécia", sigla: "SWE", id: "SWE" },
+      { flag: "🇹🇳", name: "Tunísia", sigla: "TUN", id: "TUN" },
+      { flag: "🇧🇪", name: "Bélgica", sigla: "BEL", id: "BEL" },
+      { flag: "🇪🇬", name: "Egito", sigla: "EGY", id: "EGY" },
+      { flag: "🇮🇷", name: "Irã", sigla: "IRN", id: "IRN" },
+      { flag: "🇳🇿", name: "Nova Zelândia", sigla: "NZL", id: "NZL" },
+      { flag: "🇪🇸", name: "Espanha", sigla: "ESP", id: "ESP" },
+      { flag: "🇨🇻", name: "Cabo Verde", sigla: "CPV", id: "CPV" },
+      { flag: "🇸🇦", name: "Arábia Saudita", sigla: "KSA", id: "KSA" },
+      { flag: "🇺🇾", name: "Uruguai", sigla: "URU", id: "URU" },
+      { flag: "🇫🇷", name: "França", sigla: "FRA", id: "FRA" },
+      { flag: "🇸🇳", name: "Senegal", sigla: "SEN", id: "SEN" },
+      { flag: "🇮🇶", name: "Iraque", sigla: "IRQ", id: "IRQ" },
+      { flag: "🇳🇴", name: "Noruega", sigla: "NOR", id: "NOR" },
+      { flag: "🇦🇷", name: "Argentina", sigla: "ARG", id: "ARG" },
+      { flag: "🇩🇿", name: "Argélia", sigla: "ALG", id: "ALG" },
+      { flag: "🇦🇹", name: "Áustria", sigla: "AUT", id: "AUT" },
+      { flag: "🇯🇴", name: "Jordânia", sigla: "JOR", id: "JOR" },
+      { flag: "🇵🇹", name: "Portugal", sigla: "POR", id: "POR" },
+      { flag: "🇨🇬", name: "Congo", sigla: "COP", id: "COP" },
+      { flag: "🇺🇿", name: "Uzbequistão", sigla: "UZB", id: "UZB" },
+      { flag: "🇨🇴", name: "Colômbia", sigla: "COL", id: "COL" },
+      { flag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿", name: "Inglaterra", sigla: "ENG", id: "ENG" },
+      { flag: "🇭🇷", name: "Croácia", sigla: "CRO", id: "CRO" },
+      { flag: "🇬🇭", name: "Gana", sigla: "GHA", id: "GHA" },
+      { flag: "🇵🇦", name: "Panamá", sigla: "PAN", id: "PAN" },
+    ];
+
+    const especiais = [
+      { flag: "📚", name: "História da Copa", sigla: "FWC", id: "HIST" },
+      { flag: "🥤", name: "Coca-Cola", sigla: "CC", id: "CC" },
+    ];
+
+    function renderGrid(containerId, items) {
+      const grid = document.getElementById(containerId);
+      items.forEach(item => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.id = "card-" + item.id;
+        card.innerHTML = `
+          <div class="card-header">
+            <span class="card-flag">${item.flag}</span>
+            <div>
+              <div class="card-name">${item.name}</div>
+              <div class="card-sigla">${item.sigla}</div>
+            </div>
+          </div>
+          <input type="text" id="input-${item.id}" placeholder="ex: 1-3-7" aria-label="Figurinhas de ${item.name}" oninput="toggleFilled('${item.id}')" />
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function toggleFilled(id) {
+      const val = document.getElementById("input-" + id).value.trim();
+      document.getElementById("card-" + id).classList.toggle("filled", val.length > 0);
+    }
+
+    renderGrid("grid-inicio", inicio);
+    renderGrid("grid-selecoes", selecoes);
+    renderGrid("grid-especiais", especiais);
+
+    function gerarMensagem() {
+      const entregaEl = document.querySelector('input[name="entrega"]:checked');
+      const entrega = entregaEl ? entregaEl.value : null;
+
+      const todos = [...inicio, ...selecoes, ...especiais];
+      const linhas = [];
+
+      todos.forEach(item => {
+        const val = document.getElementById("input-" + item.id).value.trim();
+        if (!val) return;
+        if (item.id === "FWC") {
+          linhas.push(`🏆 Início / FWC (1 a 8): ${val}`);
+        } else if (item.id === "HIST") {
+          linhas.push(`📚 História da Copa (FWC): ${val}`);
+        } else if (item.id === "CC") {
+          linhas.push(`🥤 Coca-Cola (CC): ${val}`);
+        } else {
+          linhas.push(`${item.flag} ${item.name} (${item.sigla}): ${val}`);
+        }
+      });
+
+      const outputWrap = document.getElementById("output-wrap");
+      const outputText = document.getElementById("output-text");
+      const btnCopiar = document.getElementById("btn-copiar");
+
+      if (linhas.length === 0 && !entrega) {
+        outputText.textContent = "Nenhuma figurinha preenchida ainda.";
+        outputWrap.classList.add("visible");
+        btnCopiar.classList.remove("visible");
+        return;
+      }
+
+      let mensagem = "Olá! Gostaria de fazer um orçamento para as seguintes figurinhas da Copa 2026:\n";
+
+      if (entrega) {
+        mensagem += `\n📦 Entrega: ${entrega}\n`;
+      }
+
+      if (linhas.length > 0) {
+        mensagem += "\n" + linhas.join("\n");
+      }
+
+      outputText.textContent = mensagem;
+      outputWrap.classList.add("visible");
+      btnCopiar.classList.add("visible");
+      document.getElementById("copiado").classList.remove("visible");
+      outputWrap.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }
+
+    function copiarTexto() {
+      const texto = document.getElementById("output-text").textContent;
+      navigator.clipboard.writeText(texto).then(() => {
+        document.getElementById("copiado").classList.add("visible");
+        setTimeout(() => document.getElementById("copiado").classList.remove("visible"), 2500);
+      });
+    }
+  </script>
+
+</body>
+</html>
